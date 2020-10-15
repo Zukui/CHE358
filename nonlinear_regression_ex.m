@@ -51,7 +51,7 @@ theta
 %% Confidence intervals
 n = size(Y,1);
 p = 2;
-k = 2;
+
 F_final = theta(1,end)./(dP./rho + g*theta(2,end));
 Z_final = Y - F_final;
 D_final = [1./(dP./rho + g*theta(2,end))    -theta(1,end).*g./(dP./rho + g.*theta(2,end)).^2];
